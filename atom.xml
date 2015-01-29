@@ -4,7 +4,7 @@
   <title><![CDATA[heyandev github Blog]]></title>
   <link href="http://heyandev.github.io/atom.xml" rel="self"/>
   <link href="http://heyandev.github.io/"/>
-  <updated>2015-01-29T15:36:58+08:00</updated>
+  <updated>2015-01-29T15:40:06+08:00</updated>
   <id>http://heyandev.github.io/</id>
   <author>
     <name><![CDATA[heyan]]></name>
@@ -95,7 +95,7 @@
 </span><span class='line'>git clone git://github.com/imathis/octopress.git  octopress</span></code></pre></td></tr></table></div></figure>
 
 
-<p>然后更新 Octopress 的gem更新源：进到 E:octopress 目录，用文本编辑器（例如记事本）打开文件Gemfile，将里面source “<a href="http://rubygems.org/%E2%80%9D%E6%94%B9%E4%B8%BAsource">http://rubygems.org/%E2%80%9D%E6%94%B9%E4%B8%BAsource</a> “<a href="http://ruby.taobao.org/%E2%80%9D%E3%80%82">http://ruby.taobao.org/%E2%80%9D%E3%80%82</a></p>
+<p>然后更新 Octopress 的gem更新源：进到 E:octopress 目录，用文本编辑器（例如记事本）打开文件Gemfile，将里面source &ldquo;<a href="http://rubygems.org/">http://rubygems.org/</a>&#8220;改为source &#8221;<a href="http://ruby.taobao.org/">http://ruby.taobao.org/</a>&#8220;。</p>
 
 <p>最后安装Octopress的依赖项，在Windows的CMD窗口输入以下命令：</p>
 
