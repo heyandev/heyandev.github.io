@@ -4,7 +4,7 @@
   <title><![CDATA[heyandev github Blog]]></title>
   <link href="http://heyandev.github.io/atom.xml" rel="self"/>
   <link href="http://heyandev.github.io/"/>
-  <updated>2015-01-29T13:29:05+08:00</updated>
+  <updated>2015-01-29T13:32:31+08:00</updated>
   <id>http://heyandev.github.io/</id>
   <author>
     <name><![CDATA[heyan]]></name>
@@ -18,7 +18,8 @@
     <link href="http://heyandev.github.io/blog/2015/01/29/zai-githubshang-da-jian-octopressbo-ke/"/>
     <updated>2015-01-29T13:21:50+08:00</updated>
     <id>http://heyandev.github.io/blog/2015/01/29/zai-githubshang-da-jian-octopressbo-ke</id>
-    <content type="html"><![CDATA[<p>安装Octopress博客前需在本机上安装Ruby运行环境和Devkit，另外还要下载Octopress，更改gem的更新源，安装依赖项。本文将针对Github上的Octopress博客搭建进行详细说明。</p>
+    <content type="html"><![CDATA[<p>&lt;!– more –>
+安装Octopress博客前需在本机上安装Ruby运行环境和Devkit，另外还要下载Octopress，更改gem的更新源，安装依赖项。本文将针对Github上的Octopress博客搭建进行详细说明。</p>
 
 <p>一、搭建本地环境
 为了在Github上使用Octopress，需要首先配置一下本地环境：</p>
@@ -75,8 +76,6 @@ bundle install
 
 <p>创建Repo，如下图：
 <a href="http://xuhehuan.com/wp-content/uploads/2012/08/BEA30C102E82E3CFDD81FC9C2ECAD685_844_554.jpeg">http://xuhehuan.com/wp-content/uploads/2012/08/BEA30C102E82E3CFDD81FC9C2ECAD685_844_554.jpeg</a></p>
-
-<p>&lt;!– more –></p>
 ]]></content>
   </entry>
   
