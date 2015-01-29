@@ -4,7 +4,7 @@
   <title><![CDATA[heyandev github Blog]]></title>
   <link href="http://heyandev.github.io/atom.xml" rel="self"/>
   <link href="http://heyandev.github.io/"/>
-  <updated>2015-01-29T14:10:44+08:00</updated>
+  <updated>2015-01-29T14:14:17+08:00</updated>
   <id>http://heyandev.github.io/</id>
   <author>
     <name><![CDATA[heyan]]></name>
@@ -20,7 +20,8 @@
     <id>http://heyandev.github.io/blog/2015/01/29/zai-githubshang-da-jian-octopressbo-ke</id>
     <content type="html"><![CDATA[<p>安装Octopress博客前需在本机上安装Ruby运行环境和Devkit，另外还要下载Octopress，更改gem的更新源，安装依赖项。本文将针对Github上的Octopress博客搭建进行详细说明。</p>
 
-<p>&lt;!-more-></p>
+<!--more-->
+
 
 <p>一、搭建本地环境</p>
 
