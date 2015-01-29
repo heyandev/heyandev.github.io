@@ -4,7 +4,7 @@
   <title><![CDATA[heyandev github Blog]]></title>
   <link href="http://heyandev.github.io/atom.xml" rel="self"/>
   <link href="http://heyandev.github.io/"/>
-  <updated>2015-01-29T14:14:17+08:00</updated>
+  <updated>2015-01-29T14:26:34+08:00</updated>
   <id>http://heyandev.github.io/</id>
   <author>
     <name><![CDATA[heyan]]></name>
@@ -34,14 +34,14 @@
 <p>为了检查ruby是否已加入到PATH中，可在 Windows 的cmd窗口中执行以下命令：</p>
 
 <p>ruby –version
-接着安装Devkit，选择下载 4.5.2 版本：DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe，下载完成后，将其解压到如 E:\DevKit，然后在win的cmd窗口中执行如下命令进行安装：</p>
-
-<p>E:
+接着安装Devkit，选择下载 4.5.2 版本：DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe，下载完成后，将其解压到如 E:\DevKit，然后在win的cmd窗口中执行如下命令进行安装：
+&ldquo;
+E:
 cd DevKit
 ruby dk.rb init
-ruby dk.rb install</p>
-
-<p>最后安装python，主要是博客代码加亮模块需要python环境的支持，下载2.7版，安装完以后，在Windows的cmd窗口中执行：</p>
+ruby dk.rb install
+&rdquo;
+最后安装python，主要是博客代码加亮模块需要python环境的支持，下载2.7版，安装完以后，在Windows的cmd窗口中执行：</p>
 
 <p>easy_install pygments</p>
 
