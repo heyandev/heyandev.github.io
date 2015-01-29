@@ -1,70 +1,4 @@
-
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>heyandev github Blog</title>
-  <meta name="author" content="heyan">
-
-  
-  <meta name="description" content="安装Octopress博客前需在本机上安装Ruby运行环境和Devkit，另外还要下载Octopress，更改gem的更新源，安装依赖项。本文将针对Github上的Octopress博客搭建进行详细说明。
-">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://heyandev.github.io/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="heyandev github Blog" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">heyandev github Blog</a></h1>
-  
-    <h2>Go your own way.</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://www.google.com.hk/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="sitesearch" value="heyandev.github.io">
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
+<div class="blog-index">
   
   
   
@@ -89,6 +23,32 @@
 
 
   <div class="entry-content"><p>安装Octopress博客前需在本机上安装Ruby运行环境和Devkit，另外还要下载Octopress，更改gem的更新源，安装依赖项。本文将针对Github上的Octopress博客搭建进行详细说明。</p>
+
+<p>&lt;!-more-></p>
+
+<p>一、搭建本地环境</p>
+
+<p>为了在Github上使用Octopress，需要首先配置一下本地环境：</p>
+
+<p>首先安装Git，下载msysgit，目前最新版本是 Git-1.7.10-preview20120409.exe ，安装可参考官方文档。</p>
+
+<p>然后安装Ruby， Octopress 官方文档中指定的 Ruby 版本是 1.9.2，所以我们选择 Ruby 1.9.2-p290，下载 rubyinstaller-1.9.2-p290.exe，双击安装，安装时记得选中“Add Ruby executables to your PATH”。</p>
+
+<p>为了检查ruby是否已加入到PATH中，可在 Windows 的cmd窗口中执行以下命令：</p>
+
+<p>ruby –version
+接着安装Devkit，选择下载 4.5.2 版本：DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe，下载完成后，将其解压到如 E:\DevKit，然后在win的cmd窗口中执行如下命令进行安装：</p>
+
+<p>E:
+cd DevKit
+ruby dk.rb init
+ruby dk.rb install</p>
+
+<p>最后安装python，主要是博客代码加亮模块需要python环境的支持，下载2.7版，安装完以后，在Windows的cmd窗口中执行：</p>
+
+<p>easy_install pygments</p>
+
+<p>本地环境配置结束。</p>
 </div>
   
   
@@ -121,36 +81,3 @@
 
   
 </aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2015 - heyan -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
