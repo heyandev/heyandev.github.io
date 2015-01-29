@@ -4,7 +4,7 @@
   <title><![CDATA[heyandev github Blog]]></title>
   <link href="http://heyandev.github.io/atom.xml" rel="self"/>
   <link href="http://heyandev.github.io/"/>
-  <updated>2015-01-29T13:32:31+08:00</updated>
+  <updated>2015-01-29T13:39:17+08:00</updated>
   <id>http://heyandev.github.io/</id>
   <author>
     <name><![CDATA[heyan]]></name>
@@ -18,64 +18,7 @@
     <link href="http://heyandev.github.io/blog/2015/01/29/zai-githubshang-da-jian-octopressbo-ke/"/>
     <updated>2015-01-29T13:21:50+08:00</updated>
     <id>http://heyandev.github.io/blog/2015/01/29/zai-githubshang-da-jian-octopressbo-ke</id>
-    <content type="html"><![CDATA[<p>&lt;!– more –>
-安装Octopress博客前需在本机上安装Ruby运行环境和Devkit，另外还要下载Octopress，更改gem的更新源，安装依赖项。本文将针对Github上的Octopress博客搭建进行详细说明。</p>
-
-<p>一、搭建本地环境
-为了在Github上使用Octopress，需要首先配置一下本地环境：</p>
-
-<p>首先安装Git，下载msysgit，目前最新版本是 Git-1.7.10-preview20120409.exe ，安装可参考官方文档。</p>
-
-<p>然后安装Ruby， Octopress 官方文档中指定的 Ruby 版本是 1.9.2，所以我们选择 Ruby 1.9.2-p290，下载 rubyinstaller-1.9.2-p290.exe，双击安装，安装时记得选中“Add Ruby executables to your PATH”。</p>
-
-<p>为了检查ruby是否已加入到PATH中，可在 Windows 的cmd窗口中执行以下命令：</p>
-
-<p>ruby –version
-接着安装Devkit，选择下载 4.5.2 版本：DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe，下载完成后，将其解压到如 E:\DevKit，然后在win的cmd窗口中执行如下命令进行安装：</p>
-
-<p>E:
-cd DevKit
-ruby dk.rb init
-ruby dk.rb install
-最后安装python，主要是博客代码加亮模块需要python环境的支持，下载2.7版，安装完以后，在Windows的cmd窗口中执行：</p>
-
-<p>easy_install pygments
-本地环境配置结束。</p>
-
-<p>二、更新本地环境配置
-为了支持中文UTF-8编码，对Windows环境变量配置如下：</p>
-
-<p>LANG=zh_CN.UTF-8
-LC_ALL=zh_CN.UTF-8
-也可在直接在Windows的cmd窗口下运行命令</p>
-
-<p>set LANG=zh_CN.UTF-8
-set LC_ALL=zh_CN.UTF-8
-更新gem的更新源，ruby的官方更新源经常被河蟹，换成国内的更新源，这样速度就快多了，变更如下：</p>
-
-<p>gem sources -a <a href="http://ruby.taobao.org/">http://ruby.taobao.org/</a>
-gem sources -r <a href="http://rubygems.org/">http://rubygems.org/</a>
-gem sources -l
-最后一个命令可查看更该后的更新源列表。</p>
-
-<p>三、下载并配置Octopress
-首先下载Octopress源码，可以使用下面git命令下载，也可直接在Octopress Github库中下载octopress的zip包（点击下载），然后将下载的压缩包解压到E盘根目录，修改解压后的文件夹名称为 octopress。</p>
-
-<p>E:
-git clone git://github.com/imathis/octopress.git  octopress
-然后更新 Octopress 的gem更新源：进到 E:octopress 目录，用文本编辑器（例如记事本）打开文件Gemfile，将里面source “<a href="http://rubygems.org/%E2%80%9D%E6%94%B9%E4%B8%BAsource">http://rubygems.org/%E2%80%9D%E6%94%B9%E4%B8%BAsource</a> “<a href="http://ruby.taobao.org/%E2%80%9D%E3%80%82">http://ruby.taobao.org/%E2%80%9D%E3%80%82</a></p>
-
-<p>最后安装Octopress的依赖项，在Windows的CMD窗口输入以下命令：</p>
-
-<p>E:
-cd octopress
-gem install bundler
-bundle install
-四、新建Github Repositories
-登录Github，假设你的用户名是username，首先要新建一个命名为 username.github.com 的Repo，命名必须是这个格式，如果不这样命名的话，在运行命令 rake setup_github_pages  之后不能够自动创建后面提到的master和source 分支，而是作为普通仓库生成 gh-pages 分支。</p>
-
-<p>创建Repo，如下图：
-<a href="http://xuhehuan.com/wp-content/uploads/2012/08/BEA30C102E82E3CFDD81FC9C2ECAD685_844_554.jpeg">http://xuhehuan.com/wp-content/uploads/2012/08/BEA30C102E82E3CFDD81FC9C2ECAD685_844_554.jpeg</a></p>
+    <content type="html"><![CDATA[<p>安装Octopress博客前需在本机上安装Ruby运行环境和Devkit，另外还要下载Octopress，更改gem的更新源，安装依赖项。本文将针对Github上的Octopress博客搭建进行详细说明。</p>
 ]]></content>
   </entry>
   
