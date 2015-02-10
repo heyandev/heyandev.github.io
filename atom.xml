@@ -4,7 +4,7 @@
   <title><![CDATA[heyandev github Blog]]></title>
   <link href="http://heyandev.github.io/atom.xml" rel="self"/>
   <link href="http://heyandev.github.io/"/>
-  <updated>2015-02-10T09:57:00+08:00</updated>
+  <updated>2015-02-10T09:58:49+08:00</updated>
   <id>http://heyandev.github.io/</id>
   <author>
     <name><![CDATA[heyan]]></name>
@@ -18,9 +18,7 @@
     <link href="http://heyandev.github.io/blog/2015/02/10/clone-your-octopress-to-blog-from-two-places/"/>
     <updated>2015-02-10T09:56:22+08:00</updated>
     <id>http://heyandev.github.io/blog/2015/02/10/clone-your-octopress-to-blog-from-two-places</id>
-    <content type="html"><![CDATA[<p>Clone Your Octopress to Blog From Two Places</p>
-
-<p>This post covers how recreate a local repository of your Octopress blog. Perhaps you’ve accidentally lost it, or perhaps you would like to be able to blog from two different places. Recently I bought a new computer and I wanted to be able to blog from both my desktop and my laptop.</p>
+    <content type="html"><![CDATA[<p>This post covers how recreate a local repository of your Octopress blog. Perhaps you’ve accidentally lost it, or perhaps you would like to be able to blog from two different places. Recently I bought a new computer and I wanted to be able to blog from both my desktop and my laptop.</p>
 
 <!--more-->
 
