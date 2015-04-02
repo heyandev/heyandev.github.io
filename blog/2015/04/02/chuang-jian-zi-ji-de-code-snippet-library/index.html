@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>创建自己的Code Snippet Library - heyandev github Blog</title>
+  <meta name="author" content="heyan">
+
+  
+  <meta name="description" content="很多时候，我们需要写很多相同或者相似功能的代码片段亦或注视（包括文件说明
+和函数说明），也许你会用到copy，你会认为这是最快的方式。然而，事实真的是
+这样吗？ 在xcode中，存在一个非常实用的功能，那就是code snippet，如下图所示： 你也许用到过，直接从这里面拖一个出来， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://heyandev.github.io/blog/2015/04/02/chuang-jian-zi-ji-de-code-snippet-library/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="heyandev github Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">heyandev github Blog</a></h1>
+  
+    <h2>Go your own way.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://www.google.com.hk/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="heyandev.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">创建自己的Code Snippet Library</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-04-02T14:53:33+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2015</span></span> <span class='time'>2:53 pm</span></time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://heyandev.github.io">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><pre><code>很多时候，我们需要写很多相同或者相似功能的代码片段亦或注视（包括文件说明
+和函数说明），也许你会用到copy，你会认为这是最快的方式。然而，事实真的是
+这样吗？
+</code></pre>
+
+<!--more-->
+
+
+<pre><code>在xcode中，存在一个非常实用的功能，那就是code snippet，如下图所示：
+</code></pre>
+
+<p>   <img src="../images/xcode_snippet.png" alt="xcode 中的示意图" /></p>
+
+<pre><code>你也许用到过，直接从这里面拖一个出来，就生成一个代码块，是不是很方便？然而，系统提供的毕竟有限，很多时候并不能满足我们的要求。今天，我们就自己来创建自己的code snippet，是不是很cool？
+我们以创建一个函数说明为例子，首先在xcode中写下如下的代码：
+</code></pre>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/**
+</span><span class='line'> * &lt;#Description#&gt;
+</span><span class='line'> *
+</span><span class='line'> * @param one &lt;#param description#&gt;
+</span><span class='line'> * @param two &lt;#param description#&gt;
+</span><span class='line'> *
+</span><span class='line'> * @return &lt;#return description#&gt;
+</span><span class='line'> */</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>然后，我们全选这段代码，直接拖到xcode 的code snippet中，得到了如下的效果：
+</code></pre>
+
+<p><img src="../images/xcode_snippet2.png" alt="xcode 中的示意图" /></p>
+
+<pre><code>为了区分和识别，我们可以定义自己的title，比如:"函数注释"，还有一个更加巧妙的方法，那就是设置“Completion Shortcut”，顾名思义就是设置快捷键，这里，我输入"heyan_function_comment"，点击“Done”，就完成了！
+在xcode工程中输入“heyan”就自动联想出来了，直接回车，是不是很cool！
+</code></pre>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">heyan</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2015-04-02T14:53:33+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2015</span></span> <span class='time'>2:53 pm</span></time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://heyandev.github.io/blog/2015/04/02/chuang-jian-zi-ji-de-code-snippet-library/" data-via="" data-counturl="http://heyandev.github.io/blog/2015/04/02/chuang-jian-zi-ji-de-code-snippet-library/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/02/10/clone-your-octopress-to-blog-from-two-places/" title="Previous Post: Clone Your Octopress to Blog From Two Places">&laquo; Clone Your Octopress to Blog From Two Places</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/04/02/chuang-jian-zi-ji-de-code-snippet-library/">创建自己的Code Snippet Library</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/02/10/clone-your-octopress-to-blog-from-two-places/">Clone Your Octopress to Blog From Two Places</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/02/10/ioskai-fa-arcnei-cun-guan-li-ji-zhu-yao-dian/">iOS开发ARC内存管理技术要点</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/02/06/25ge-gityong-fa-ji-qiao/">25个Git用法技巧</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/01/29/yong-cocoapodszuo-ioscheng-xu-de-yi-lai-guan-li/">用cocoapods做ios程序的依赖管理</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+<h1>personal csdn blog</h1>
+<ul>
+        <li>
+        <a href="http://blog.csdn.net/u012094456">sven的专栏</a>
+        </li>
+</ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - heyan -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'heyandev';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://heyandev.github.io/blog/2015/04/02/chuang-jian-zi-ji-de-code-snippet-library/';
+        var disqus_url = 'http://heyandev.github.io/blog/2015/04/02/chuang-jian-zi-ji-de-code-snippet-library/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -4,7 +4,7 @@
   <title><![CDATA[heyandev github Blog]]></title>
   <link href="http://heyandev.github.io/atom.xml" rel="self"/>
   <link href="http://heyandev.github.io/"/>
-  <updated>2015-02-16T09:55:33+08:00</updated>
+  <updated>2015-04-02T15:39:58+08:00</updated>
   <id>http://heyandev.github.io/</id>
   <author>
     <name><![CDATA[heyan]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[创建自己的Code Snippet Library]]></title>
+    <link href="http://heyandev.github.io/blog/2015/04/02/chuang-jian-zi-ji-de-code-snippet-library/"/>
+    <updated>2015-04-02T14:53:33+08:00</updated>
+    <id>http://heyandev.github.io/blog/2015/04/02/chuang-jian-zi-ji-de-code-snippet-library</id>
+    <content type="html"><![CDATA[<pre><code>很多时候，我们需要写很多相同或者相似功能的代码片段亦或注视（包括文件说明
+和函数说明），也许你会用到copy，你会认为这是最快的方式。然而，事实真的是
+这样吗？
+</code></pre>
+
+<!--more-->
+
+
+<pre><code>在xcode中，存在一个非常实用的功能，那就是code snippet，如下图所示：
+</code></pre>
+
+<p>   <img src="../images/xcode_snippet.png" alt="xcode 中的示意图" /></p>
+
+<pre><code>你也许用到过，直接从这里面拖一个出来，就生成一个代码块，是不是很方便？然而，系统提供的毕竟有限，很多时候并不能满足我们的要求。今天，我们就自己来创建自己的code snippet，是不是很cool？
+我们以创建一个函数说明为例子，首先在xcode中写下如下的代码：
+</code></pre>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/**
+</span><span class='line'> * &lt;#Description#&gt;
+</span><span class='line'> *
+</span><span class='line'> * @param one &lt;#param description#&gt;
+</span><span class='line'> * @param two &lt;#param description#&gt;
+</span><span class='line'> *
+</span><span class='line'> * @return &lt;#return description#&gt;
+</span><span class='line'> */</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>然后，我们全选这段代码，直接拖到xcode 的code snippet中，得到了如下的效果：
+</code></pre>
+
+<p><img src="../images/xcode_snippet2.png" alt="xcode 中的示意图" /></p>
+
+<pre><code>为了区分和识别，我们可以定义自己的title，比如:"函数注释"，还有一个更加巧妙的方法，那就是设置“Completion Shortcut”，顾名思义就是设置快捷键，这里，我输入"heyan_function_comment"，点击“Done”，就完成了！
+在xcode工程中输入“heyan”就自动联想出来了，直接回车，是不是很cool！
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Clone Your Octopress to Blog From Two Places]]></title>
